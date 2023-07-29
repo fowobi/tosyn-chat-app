@@ -12,11 +12,29 @@ const App = () => {
       .catch((error) => console.error("Error fetching messages:", error));
   }, []);
 
+  // const handleDelete = (id) => {
+  //   fetch(`https://tosin-chat-server.glitch.me/messages/${id}`, {
+  //     method: "DELETE",
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       // Filter out the deleted message
+  //       const updatedMessages = messages.filter((message) => message.id !== id);
+  //       setMessages(updatedMessages);
+  //     })
+  //     .catch((error) => console.error("Error deleting message:", error));
+  // };
+
   const handleDelete = (id) => {
     fetch(`https://tosin-chat-server.glitch.me/messages/${id}`, {
       method: "DELETE",
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
       .then((data) => {
         // Filter out the deleted message
         const updatedMessages = messages.filter((message) => message.id !== id);
@@ -24,6 +42,7 @@ const App = () => {
       })
       .catch((error) => console.error("Error deleting message:", error));
   };
+
 
   const handleMessageSubmit = (newMessage) => {
     fetch("https://tosin-chat-server.glitch.me/messages", {
