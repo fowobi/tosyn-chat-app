@@ -13,15 +13,16 @@ const MessageForm = ({ onMessageSubmit }) => {
 
   return (
     <div>
-      <h2>Send a Message</h2>
+      <h2 className="send-msg">Send a Message</h2>
       <form onSubmit={handleSubmit}>
-        <p>
+        <p className="p-text">
           Name:{" "}
-          <input
+          <input className="name"
             type="text"
             value={from}
             onChange={(e) => setFrom(e.target.value)}
             placeholder="Your Name"
+            required
           />{" "}
           <br />
           Message:{" "}
@@ -30,10 +31,11 @@ const MessageForm = ({ onMessageSubmit }) => {
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="The message..."
+            required
           />{" "}
           <br />
         </p>
-        <button type="submit">Send</button>
+        <button className="submit-btn" type="submit">Send</button>
       </form>
     </div>
   );

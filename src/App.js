@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MessageList from "./MessageList";
 import MessageForm from "./MessageForm";
+import "./styles.css";
 
 const App = () => {
   const [messages, setMessages] = useState([]);
