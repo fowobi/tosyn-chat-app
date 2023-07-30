@@ -2,32 +2,22 @@ import React, { useEffect, useState } from "react";
 import MessageList from "./MessageList";
 import MessageForm from "./MessageForm";
 import "./styles.css";
+import API_URL from "./config";
 
 const App = () => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    fetch("https://tosin-chat-server.glitch.me/messages")
+    fetch(`${API_URL}/messages`)
       .then((response) => response.json())
       .then((data) => setMessages(data))
       .catch((error) => console.error("Error fetching messages:", error));
   }, []);
 
-  // const handleDelete = (id) => {
-  //   fetch(`https://tosin-chat-server.glitch.me/messages/${id}`, {
-  //     method: "DELETE",
-  //   })
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       // Filter out the deleted message
-  //       const updatedMessages = messages.filter((message) => message.id !== id);
-  //       setMessages(updatedMessages);
-  //     })
-  //     .catch((error) => console.error("Error deleting message:", error));
-  // };
+ 
 
   const handleDelete = (id) => {
-    fetch(`https://tosin-chat-server.glitch.me/messages/${id}`, {
+    fetch(`${API_URL}/messages/${id}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -46,7 +36,7 @@ const App = () => {
 
 
   const handleMessageSubmit = (newMessage) => {
-    fetch("https://tosin-chat-server.glitch.me/messages", {
+    fetch(`${API_URL}/messages`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
