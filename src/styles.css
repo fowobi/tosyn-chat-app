@@ -4,7 +4,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+    background-image: url(https://images.unsplash.com/photo-1658163724548-29ef00812a54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxM3xibzhqUUtUYUUwWXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+        background-attachment: fixed;
+        background-size: cover;
+        /* width: 100vw; 
+        height: 100vh; */
+    }
+
 
 .container {
    
@@ -15,10 +21,13 @@ body {
 
 h1 {
     text-align: center;
+    color: rgb(73, 8, 99);
 }
 
 h2 {
     margin-bottom: 10px;
+    color: rgb(73, 8, 99);
+    text-align: center;
 }
 
 form {
@@ -47,6 +56,7 @@ ul {
 }
 
 li {
+    border-radius: 1rem;
     padding: 10px;
     border: 1px solid #ddd;
     background-color: lightgreen;

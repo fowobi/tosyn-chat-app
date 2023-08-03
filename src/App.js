@@ -50,7 +50,7 @@ const App = () => {
 
   return (
     <div className="chat-name">
-      <h1>CYF Chat</h1>
+      <h1>Tosin's CYF Chat</h1>
       <MessageForm onMessageSubmit={handleMessageSubmit} />
       <MessageList messages={messages} onDelete={handleDelete} />
     </div>
