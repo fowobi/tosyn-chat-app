@@ -5,8 +5,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(https://images.unsplash.com/photo-1658163724548-29ef00812a54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxM3xibzhqUUtUYUUwWXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
-        background-attachment: fixed;
-        background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
         /* width: 100vw; 
         height: 100vh; */
     }
