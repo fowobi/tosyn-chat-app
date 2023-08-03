@@ -62,6 +62,8 @@ li button {
     padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    /* margin-right: 2rem; */
+    
 }
 
 li button:hover {
@@ -88,3 +90,10 @@ background-color: #ff0000;
 .send-msg{
     text-align: center;
 }
+.message-time{
+    margin-top: -0.3rem;
+}
+/* .chat-name{
+    border: 5px solid blue;
+    background-image: url("https: //unsplash.com/photos/ZQKk3AXTGlQ");
+} */

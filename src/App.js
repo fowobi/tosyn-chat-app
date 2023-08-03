@@ -49,7 +49,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="chat-name">
       <h1>CYF Chat</h1>
       <MessageForm onMessageSubmit={handleMessageSubmit} />
       <MessageList messages={messages} onDelete={handleDelete} />
