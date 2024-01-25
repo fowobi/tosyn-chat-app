@@ -4,7 +4,9 @@ import MessageForm from "./MessageForm";
 import "./styles.css";
 
 
+// const apiUrl = process.env.REACT_APP_API_URL || "https://tosin-chat-server1.glitch.me";
 const apiUrl = process.env.REACT_APP_API_URL;
+
 
 const App = () => {
   const [messages, setMessages] = useState([]);
