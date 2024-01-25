@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import MessageList from "./MessageList";
 import MessageForm from "./MessageForm";
 import "./styles.css";
+import config from "./config";
 
 
-// const apiUrl = process.env.REACT_APP_API_URL || "https://tosin-chat-server1.glitch.me";
-const apiUrl = process.env.REACT_APP_API_URL;
-
+const apiUrl = process.env.REACT_APP_API_URL || config.apiUrl;
 
 const App = () => {
   const [messages, setMessages] = useState([]);
@@ -17,8 +16,6 @@ const App = () => {
       .then((data) => setMessages(data))
       .catch((error) => console.error("Error fetching messages:", error));
   }, []);
-
- 
 
   const handleDelete = (id) => {
     fetch(`${apiUrl}/messages/${id}`, {
