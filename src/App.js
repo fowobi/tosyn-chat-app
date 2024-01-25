@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import MessageList from "./MessageList";
 import MessageForm from "./MessageForm";
 import "./styles.css";
-import API_URL from "./config";
+
+
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const App = () => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    fetch(`${API_URL}/messages`)
+    fetch(`${apiUrl}/messages`)
       .then((response) => response.json())
       .then((data) => setMessages(data))
       .catch((error) => console.error("Error fetching messages:", error));
@@ -17,7 +19,7 @@ const App = () => {
  
 
   const handleDelete = (id) => {
-    fetch(`${API_URL}/messages/${id}`, {
+    fetch(`${apiUrl}/messages/${id}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -36,7 +38,7 @@ const App = () => {
 
 
   const handleMessageSubmit = (newMessage) => {
-    fetch(`${API_URL}/messages`, {
+    fetch(`${apiUrl}/messages`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
