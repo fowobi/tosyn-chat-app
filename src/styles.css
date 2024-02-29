@@ -7,8 +7,7 @@ body {
     background-image: url(https://images.unsplash.com/photo-1658163724548-29ef00812a54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxM3xibzhqUUtUYUUwWXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
     background-attachment: fixed;
     background-size: cover;
-        /* width: 100vw; 
-        height: 100vh; */
+        
     }
 
 
@@ -39,7 +38,6 @@ form {
 }
 
 form input {
-    /* border: 5px solid blue; */
     margin-bottom: 10px;
     padding: 5px;
     font-size: 20px;
@@ -72,7 +70,7 @@ li button {
     padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    /* margin-right: 2rem; */
+    
     
 }
 
@@ -102,5 +100,15 @@ background-color: #ff0000;
 }
 .message-time{
     margin-top: -0.3rem;
+}
+
+@media screen and (max-width: 600px) {
+    form input,
+    .name,
+    .submit-btn,
+    .p-text {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
