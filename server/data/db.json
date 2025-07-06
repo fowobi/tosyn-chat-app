@@ -1,0 +1,68 @@
+[
+  {
+    "from": "John",
+    "text": "Welcome to CYF chat system!",
+    "id": 1,
+    "timeSent": "2024-01-25T18:58:35.217Z"
+  },
+  {
+    "from": "Kenny",
+    "text": "Hello",
+    "id": 1,
+    "timeSent": "2024-01-25T19:00:03.790Z"
+  },
+  {
+    "from": "Yomi",
+    "text": "Juices",
+    "id": 2,
+    "timeSent": "2024-01-25T19:00:21.089Z"
+  },
+  {
+    "from": "wale",
+    "text": "How are you",
+    "id": 3,
+    "timeSent": "2024-01-25T20:20:05.337Z"
+  },
+  {
+    "from": "Kola",
+    "text": "Goodieee",
+    "id": 4,
+    "timeSent": "2024-01-25T21:57:50.108Z"
+  },
+  {
+    "from": "ty",
+    "text": "Good Luck",
+    "id": 5,
+    "timeSent": "2024-02-29T14:29:45.106Z"
+  },
+  {
+    "from": "test",
+    "text": "test",
+    "id": 6,
+    "timeSent": "2024-03-09T11:47:40.107Z"
+  },
+  {
+    "from": "Test2",
+    "text": "Juicy",
+    "id": 7,
+    "timeSent": "2024-04-03T12:22:11.149Z"
+  },
+  {
+    "from": "taiye",
+    "text": "lagos",
+    "id": 8,
+    "timeSent": "2024-10-22T18:15:52.136Z"
+  },
+  {
+    "from": "Jude",
+    "text": "Hello,Ty",
+    "id": 9,
+    "timeSent": "2025-07-06T17:00:37.805Z"
+  },
+  {
+    "from": "Ty",
+    "text": "Hi,Jude",
+    "id": 10,
+    "timeSent": "2025-07-06T17:00:58.962Z"
+  }
+]

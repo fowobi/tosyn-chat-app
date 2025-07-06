@@ -7,7 +7,7 @@
 const isLocalhost = window.location.hostname === "localhost";
 
 const apiUrl = isLocalhost
-  ? "http://localhost:18080"
+  ? "http://localhost:3001"
   : "https://tosin-chat-server1.glitch.me";
 
 const config = { apiUrl };
